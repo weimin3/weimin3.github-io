@@ -11,12 +11,16 @@ Weimin is an introver now,but she used to be an extrover,her MBTI is INFJ. She h
 
 Education
 ------
-22.09 - Now        University of Zurich             Master of Science                     Zurich, Switzerland
+**2022.09 - Now** &nbsp;&nbsp;&nbsp;**University of Zurich** &nbsp;&nbsp;&nbsp;**Master of Science**&nbsp;&nbsp;**Zurich, Switzerland**
+
 Major: Data Science
+
 Minor: Bioinformatics  
  
 2009.09 - 2013.07        Beihang University           Bachelor of Management                     Beijing, PRC
+
 Major: Information Management and Information System
+
 Minor: Law 
 
 Work Experience
