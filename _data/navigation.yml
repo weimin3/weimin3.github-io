@@ -9,17 +9,17 @@ main:
   #   url: /cv/
 
   - title: "SQL tutorial"
-    url: /publications/
+    url: /SQL/
 
   - title: "Python tutorial"
-    url: /publications/
+    url: /Python tutorial/
 
   - title: "Statistics with R"
-    url: /publications/
+    url: /Statistics with R/
   
   - title: "JAVA tutorial"
-    url: /publications/
+    url: /JAVA tutorial/
 
   - title: "Machine Learning"
-    url: /publications/
+    url: /Machine Learning/
 
