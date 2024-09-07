@@ -10,8 +10,8 @@ author_profile: true
   <ul>
     <li><strong>Interger:</strong> used for numbers without decimal points(like:1,99)</li>
     <li><strong>Decimal and Float：</strong> used for fractional numbers(for instince:2.0,3.69).The difference between them is,<strong>decimal</strong> is used for precise decimal arithmetic,for example:financial calculations,currency representation.<strong>Float</strong> is used for approximate arithmetic with real numbers. </li>
-  
-  
+    <li><strong>Char and Varchar:</strong> used for characters and strings.<strong>CHAR</strong> for fixed-length strings,and <strong>VARCHAR</strong> is for variable-length strings</li>
+    <li><strong>Date and Time:</strong> used for date and time</li>
   </ul>
 {% for tutorial in site.SQL %}
   <h2><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></h2>
@@ -19,3 +19,11 @@ author_profile: true
   <hr />
 {% endfor %}
 
+<!-- 参考文献部分 -->
+<section class="references">
+  <h2>references</h2>
+  <ul>
+    <li><a href="https://medium.com/@learnwithwhiteboard_digest/all-sql-fundamentals-explained-for-beginners-in-10-minutes-e33875bf772a">Example Reference 1</a></li>
+   
+  </ul>
+</section>
