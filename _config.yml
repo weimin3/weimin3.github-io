@@ -212,7 +212,7 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
+  SQL:
     output: true
     permalink: /:collection/:path/
   portfolio:
