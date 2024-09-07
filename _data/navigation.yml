@@ -8,18 +8,18 @@ main:
   # - title: "CV"
   #   url: /cv/
 
-  - title: "SQL tutorial"
+  - title: "SQL"
     url: /SQL/
 
-  - title: "Python tutorial"
-    url: /Python tutorial/
+  - title: "Python"
+    url: /Python/
 
-  - title: "Statistics with R"
-    url: /Statistics with R/
+  - title: "JAVA"
+    url: /JAVA/
+
+  - title: "Statistics"
+    url: /Statistics/
   
-  - title: "JAVA tutorial"
-    url: /JAVA tutorial/
-
   - title: "Machine Learning"
     url: /Machine Learning/
   
