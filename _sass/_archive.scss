@@ -4,6 +4,7 @@
 
 .archive {
   margin-bottom: 2em;
+  line-height: 1.6; /* 调整全局行间距 */
 
   @include breakpoint($medium) {
     @include span(12 of 12);
