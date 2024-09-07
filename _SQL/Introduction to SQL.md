@@ -2,7 +2,7 @@
 title: "Introduction to SQL"
 collection: SQL
 category: Fundation
-permalink: /SQL/2009-10-01-paper-title-number-1
+permalink: /SQL/Introduction to SQL
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2009-10-01
 # venue: 'Journal 1'
