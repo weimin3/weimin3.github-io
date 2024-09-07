@@ -1,18 +1,15 @@
 ---
-layout: archive
+layout: default
 title: "SQL"
 permalink: /SQL/
 author_profile: true
 ---
 
-{% include base_path %}
+<h1>SQL Tutorials</h1>
 
-<!-- SQL rendering -->
 {% for tutorial in site.SQL %}
   <h2><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></h2>
   <p>{{ tutorial.excerpt }}</p>
   <hr />
 {% endfor %}
-
-
 
