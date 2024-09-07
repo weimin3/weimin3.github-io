@@ -252,10 +252,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _SQL
   - scope:
       path: ""
-      type: publications
+      type: SQL
     values:
       layout: single
       author_profile: true
