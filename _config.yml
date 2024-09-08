@@ -218,7 +218,7 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-  talks:
+  Python:
     output: true
     permalink: /:collection/:path/
 
@@ -270,12 +270,12 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
+  # _Python
   - scope:
       path: ""
-      type: talks
+      type: Python
     values:
-      layout: talk
+      layout: Python
       author_profile: true
       share: true
 
