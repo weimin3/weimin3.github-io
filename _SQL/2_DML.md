@@ -1,14 +1,59 @@
 ---
 title: "Data Manipulation Language(DML)"
 collection: SQL
-# category: Foundation
 permalink: /SQL/DML
 excerpt: 'Those commands are used to manipulate the data within the database,including SELECT,INSERT INTO,UPDATE,DELETE.'
 date: 2024-09-08
-# venue: 'Journal 1'
-# slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-# paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-# citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
 ---
+# SELECT
+Retrieving data from one or more tables.
+**Syntax**
+```sql
+SELECT column1, column2, ...
+    FROM table_name
+    WHERE condition;
+```
+**Example**
+Retrieve all columns from the employees table
+```sql
+SELECT * FROM employees
+```
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+# INSERT INTO
+Adding new rows of data to a table.
+**Syntax**
+```sql
+INSERT INTO table_name (column1, column2, ...)
+    VALUES (value1, value2, ...);
+```
+**Example**
+Insert a new employee into the employees table
+```sql
+INSERT INTO employees (name, department, salary)
+VALUES ('John', 'Marketing', 55000);
+```
+
+# UPDATE
+Modifing existing data in a table.
+**Syntax**
+```sql
+UPDATE table_name
+    SET column1 = value1, column2 = value2, ...
+    WHERE condition;
+```
+**Example**
+Update the salary of an employee in the employees table where the name is 'John'
+```sql
+UPDATE employees
+    SET salary = 60000
+    WHERE name = 'John';
+```
+
+# DELETE
+Removing rows from a table based on specified criteria.
+**Syntax**
+```sql
+DELETE FROM table_name
+    WHERE condition;
+```
+
