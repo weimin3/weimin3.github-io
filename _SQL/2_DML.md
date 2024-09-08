@@ -1,7 +1,7 @@
 ---
 title: "Data Manipulation Language(DML)"
 collection: SQL
-category: Foundation
+# category: Foundation
 permalink: /SQL/DML
 excerpt: 'Those commands are used to manipulate the data within the database,including SELECT,INSERT INTO,UPDATE,DELETE.'
 date: 2024-09-08

@@ -1,7 +1,7 @@
 ---
 title: "Data Control Language(DCL)"
 collection: SQL
-category: Foundation
+# category: Foundation
 permalink: /SQL/DCL
 excerpt: 'Those commands deal with the control of access to data in the database,cluding GRANT,REVOKE,DENY'
 date: 2024-09-08
