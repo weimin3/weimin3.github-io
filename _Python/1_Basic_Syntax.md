@@ -1,5 +1,4 @@
 ---
-# layout: archive
 title: "1. Basic Syntax"
 collection: Python
 permalink: /Python/basic-syntax/
