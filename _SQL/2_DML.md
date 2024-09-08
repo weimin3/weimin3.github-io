@@ -176,26 +176,26 @@ HAVING AVG(salary) > 50000;
     CROSS JOIN departments;
     ```
 
-    * **SELF JOIN:** Joins a table to itself, **used to compare rows within the same table**.
+** **SELF JOIN:** Joins a table to itself, **used to compare rows within the same table**.
 
-    **Syntax**
+ **Syntax**
 
-    ```sql
-    SELECT a.column1, b.column2
-    FROM table a, table b
-    WHERE a.column = b.column;
-    ```
-    **Example**
+```sql
+SELECT a.column1, b.column2
+FROM table a, table b
+WHERE a.column = b.column;
+```
+**Example**
 
-    Compares employees within the same department.
+Compares employees within the same department.
 
-    ```sql
-    SELECT e1.employee_name AS employee1, e2.employee_name AS employee2
-    FROM employees e1
-    JOIN employees e2
-    ON e1.department_id = e2.department_id
-    WHERE e1.employee_id <> e2.employee_id;
-    ```
+```sql
+SELECT e1.employee_name AS employee1, e2.employee_name AS employee2
+FROM employees e1
+JOIN employees e2
+ON e1.department_id = e2.department_id
+WHERE e1.employee_id <> e2.employee_id;
+ ```
 
 *  **Limiting the number of rows returned**
 
@@ -209,7 +209,7 @@ LIMIT number_of_rows;
 
 **Exmples**
 
-** Return the first 3 rows from the employees table
+- Return the first 3 rows from the employees table
 
 ```sql
 SELECT employee_id, name
@@ -221,14 +221,14 @@ In SQL Server, the equivalent of `LIMIT` is `TOP`
 ```sql
 SELECT TOP 3 employee_id, name
 FRM employees;
-    ```
+```
 
-** Skip the first 5 rows and return the next 3 rows (rows 6, 7, and 8).
+- Skip the first 5 rows and return the next 3 rows (rows 6, 7, and 8).
 ```sql
 SELECT employee_id, name
 FROM employees
 LIMIT 3 OFFSET 5;
-````
+```
 
 # INSERT INTO
 Adding new rows of data to a table.
