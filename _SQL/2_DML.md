@@ -15,37 +15,36 @@ SELECT column1, column2, ...
     WHERE condition;
 ```
 ## DQL
-- **Retrieve all columns from the employees table**
-
+* **Retrieve all columns from the employees table**
 ```sql
 SELECT * FROM employees;
 ```
 
-- **Retrieve specific columns**
+* **Retrieve specific columns**
 ```sql
 SELECT name,salary FROM employees;
 ```
 
-- **Filter data using `WHERE`**
+* **Filter data using `WHERE`**
 ```sql
 SELECT name,department FROM employees
 WHERE salary > 50000;
 ```
 
-- **Sorting data using `ORDER BY`.** `DESC`(descending order),`ASC`(ascending order)
+* **Sorting data using `ORDER BY`.** `DESC`(descending order),`ASC`(ascending order)
 ```sql
 SELECT name, salary FROM employees
 ORDER BY salary DESC;
 ```
 
-- **Grouping data using `GROUP BY`**
+* **Grouping data using `GROUP BY`**
 ```sql
 SELECT department, COUNT(*) AS total_employees
 FROM employees
 GROUP BY department;
 ```
 
-- **Filtering grouped data using `HAVING`**
+* **Filtering grouped data using `HAVING`**
 ```sql
 SELECT department, AVG(salary) AS average_salary
 FROM employees
@@ -53,7 +52,7 @@ GROUP BY department
 HAVING AVG(salary) > 50000;
 ```
 
-- **Joining two tables**
+* **Joining two tables**
 
 **employee** table
 
@@ -73,7 +72,8 @@ HAVING AVG(salary) > 50000;
 | 2             | IT              |
 | 3             | Marketing       |
 
-    - **INNER JOIN:** Returns **only the matching records** from both tables.
+
+    * **INNER JOIN:** Returns **only the matching records** from both tables.
 
     **Syntax**
 
@@ -94,7 +94,7 @@ HAVING AVG(salary) > 50000;
     ON employees.department_id = departments.department_id;
     ```
 
-    - **LEFT JOIN:** Returns **all records from the left table** and **the matching records from the right table**. If no match is found, NULL is returned.
+    * **LEFT JOIN:** Returns **all records from the left table** and **the matching records from the right table**. If no match is found, NULL is returned.
 
     **Syntax**
 
@@ -115,7 +115,7 @@ HAVING AVG(salary) > 50000;
     ON employees.department_id = departments.department_id;
     ```
 
-    - **RIGHT JOIN:** Returns **all records from the right table** and **the matching records from the left table**. If no match is found, NULL is returned.
+    * **RIGHT JOIN:** Returns **all records from the right table** and **the matching records from the left table**. If no match is found, NULL is returned.
 
     **Syntax**
 
@@ -136,7 +136,7 @@ HAVING AVG(salary) > 50000;
     ON employees.department_id = departments.department_id;
     ```
 
-    - **FULL OUTER JOIN：** Returns **all records from both tables**, with NULL used to fill in unmatched records.
+    * **FULL OUTER JOIN：** Returns **all records from both tables**, with NULL used to fill in unmatched records.
 
     **Syntax**
 
@@ -157,7 +157,7 @@ HAVING AVG(salary) > 50000;
     ON employees.department_id = departments.department_id;
     ```
 
-    - **CROSS JOIN:** Returns the Cartesian product of the two tables, i.e., all possible row combinations.
+    * **CROSS JOIN:** Returns the Cartesian product of the two tables, i.e., all possible row combinations.
 
     **Syntax**
 
@@ -176,7 +176,7 @@ HAVING AVG(salary) > 50000;
     CROSS JOIN departments;
     ```
 
-    - **SELF JOIN:** Joins a table to itself, **used to compare rows within the same table**.
+    * **SELF JOIN:** Joins a table to itself, **used to compare rows within the same table**.
 
     **Syntax**
 
@@ -196,7 +196,8 @@ HAVING AVG(salary) > 50000;
     ON e1.department_id = e2.department_id
     WHERE e1.employee_id <> e2.employee_id;
     ```
-- **Limiting the number of rows returned**
+
+*  **Limiting the number of rows returned**
 
 **Syntax**
 ```sql
@@ -207,7 +208,8 @@ LIMIT number_of_rows;
 ```
 
 **Exmples**
-    - Return the first 3 rows from the employees table
+
+    * Return the first 3 rows from the employees table
 
     ```sql
     SELECT employee_id, name
@@ -221,7 +223,7 @@ LIMIT number_of_rows;
     FROM employees;
     ```
 
-    - Skip the first 5 rows and return the next 3 rows (rows 6, 7, and 8).
+    * Skip the first 5 rows and return the next 3 rows (rows 6, 7, and 8).
 
     ```sql
     SELECT employee_id, name
