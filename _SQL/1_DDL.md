@@ -12,5 +12,16 @@ date: 2024-09-08
 ---
 First, we can create a database, using the following syntax
 ```sql
-CREATE DATABASE databasename;
+CREATE DATABASE [IF NOT EXISTS] databasename;
+```
+If the database already exists, there will be an error if using `CREATE DATABASE databasename;` to create a database,instead we can use `CREATE DATABASE IF NOT EXISTS databasename;` to avoid this issue.
+
+The following syntax is used to create a table:
+```sql
+CREATE TABLE table_name(
+    column 1 datatype,
+    column 2 datatype,
+    column 3 datatype,
+    ...
+)
 ```
