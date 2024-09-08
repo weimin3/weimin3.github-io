@@ -209,18 +209,19 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
+  SQL:
+      output: true
+      permalink: /:collection/:path/
+  Python:
     output: true
     permalink: /:collection/:path/
-  SQL:
+  teaching:
     output: true
     permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
-  Python:
-    output: true
-    permalink: /:collection/:path/
+  
 
 
 # These settings control how pages and collections are included in the site

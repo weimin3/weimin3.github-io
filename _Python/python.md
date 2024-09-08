@@ -1,3 +1,12 @@
+---
+title: "Talk 2 on Relevant Topic in Your Field"
+collection: Python
+type: "Python"
+permalink: /Python/2
+date: 2012-03-01
+---
+
+
 # Python
 Python 学习笔记
 <!-- TOC -->
