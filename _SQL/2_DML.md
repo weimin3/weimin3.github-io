@@ -14,12 +14,78 @@ SELECT column1, column2, ...
     FROM table_name
     WHERE condition;
 ```
-**Example**
+## DQL
+- Retrieve all columns from the employees table
 
-Retrieve all columns from the employees table
 ```sql
-SELECT * FROM employees
+SELECT * FROM employees;
 ```
+
+- Retrieve specific columns
+```sql
+SELECT name,salary FROM employees;
+```
+
+- Filter data using `WHERE`
+```sql
+SELECT name,department FROM employees
+WHERE salary > 50000;
+```
+
+- Sorting data using `ORDER BY`. `DESC`(descending order),`ASC`(ascending order)
+```sql
+SELECT name, salary FROM employees
+ORDER BY salary DESC;
+```
+
+- Grouping data using `GROUP BY`
+```sql
+SELECT department, COUNT(*) AS total_employees
+FROM employees
+GROUP BY department;
+```
+
+- Filtering grouped data using `HAVING`
+```sql
+SELECT department, AVG(salary) AS average_salary
+FROM employees
+GROUP BY department
+HAVING AVG(salary) > 50000;
+```
+
+- Joining two tables
+
+**employee** table
+
+| employee_id | employee_name | department_id |
+|-------------|---------------|---------------|
+| 1           | Alice         | 1             |
+| 2           | Bob           | 2             |
+| 3           | Charlie       | 2             |
+| 4           | David         | NULL          |
+| 5           | Eve           | 3             |
+
+**departments** table
+
+| department_id | department_name |
+|---------------|-----------------|
+| 1             | HR              |
+| 2             | IT              |
+| 3             | Marketing       |
+
+    - INNER JOIN:Returns **only the matching records** from both tables.
+
+    - LEFT JOIN:Returns **all records from the left table** and **the matching records from the right table**. If no match is found, NULL is returned.
+
+    - RIGHT JOIN:Returns **all records from the right table** and **the matching records from the left table**. If no match is found, NULL is returned.
+
+    - FULL OUTER JOIN：Returns **all records from both tables**, with NULL used to fill in unmatched records.
+
+    - CROSS JOIN:Returns the Cartesian product of the two tables, i.e., all possible row combinations.
+
+    - SELF JOIN:Joins a table to itself, **used to compare rows within the same table**.
+
+
 
 # INSERT INTO
 Adding new rows of data to a table.
