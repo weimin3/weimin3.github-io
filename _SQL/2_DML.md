@@ -2,7 +2,7 @@
 title: "Data Manipulation Language(DML)"
 collection: SQL
 permalink: /SQL/DML
-excerpt: 'Those commands are used to manipulate the data within the database,including SELECT,INSERT INTO,UPDATE,DELETE.'
+excerpt: 'Those commands are used to manipulate the data within the database,including SELECT,INSERT INTO,UPDATE,DELETE.DQL(Data Query Language)is in this part.'
 date: 2024-09-08
 ---
 # SELECT
