@@ -101,7 +101,7 @@ For instance: `CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password123';`
 CREATE ROLE role_name
 ```
 For instance: `CREATE ROLE manager`
-------
+
 
 # ALTER
 The ALTER statement is used to modify **existing objects** in a database, such as tables,columns,constraints, and more.
@@ -168,9 +168,37 @@ ALTER TABLE employees
     ALTER COLUMN hire_date SET DEFAULT CURRENT_DATE;
 ```
 Sets the default value of the hire_date column to the current date.
-----
-# DROP
 
+# DROP
+## Drop database
+```sql
+DROP DATABASE [IF EXISTS] database_name;
+```
+## Drop table
+It is used to remove an entire table from a database, including all its data and structure.
+```sql
+DROP TABLE [IF EXISTS] table_name;
+```
+## Drop view
+```sql
+DROP VIEW [IF EXISTS] view_name;
+```
+## Drop index
+```sql
+DROP INDEX [IF EXISTS] index_name ON table_name;
+```
+## DROP SEQUENCE
+```sql
+DROP SEQUENCE [IF EXISTS] sequence_name;
+```
 # TRUNCATE
+The TRUNCATE statement is used **to remove all rows from a table** quickly and efficiently, **without removing the table itself**.
+```sql
+TRUNCATE TABLE table_name;
+```
+
+**Differences Between TRUNCATE and DELETE**
+- DELETE: Can remove specific rows based on a WHERE clause, and can activate triggers. It logs each row deletion.
+- TRUNCATE: Removes all rows and does not activate triggers. It is not usually logged on a row-by-row basis.
 
 
