@@ -20,7 +20,7 @@ author_profile: true
 <p><strong>SQL constraints</strong> are rules applied to <strong>columns</strong> in a table to ensure the accuracy and reliability of the data within the database.</p>
 <ul>
   <li><strong>PRIMARY KEY:</strong> Each table can have only one primary key, and the primary key column(s) cannot contain NULL values. It uniquely identifies each record in a table.
-    <pre><code>
+    <pre><code class ="sql">
       CREATE TABLE departments (
           department_id INT PRIMARY KEY,
           department_name VARCHAR(100)
@@ -35,7 +35,7 @@ author_profile: true
     </code></pre> 
   </li>
   <li><strong>FOREIGN KEY:</strong> Ensures that the value in one table matches a value in another table, helping maintain referential integrity.
-    <pre><code>
+    <pre><code class ="sql">
       CREATE TABLE departments (
           department_id INT PRIMARY KEY,
           department_name VARCHAR(100)
@@ -50,7 +50,7 @@ author_profile: true
     </code></pre> 
   </li>
   <li><strong>UNIQUE:</strong> Ensures that all values in a column are unique. A table can have multiple unique constraints.
-    <pre><code>
+    <pre><code class ="sql">
       CREATE TABLE users (
         user_id INT PRIMARY KEY,
         email VARCHAR(255) UNIQUE
@@ -58,7 +58,7 @@ author_profile: true
     </code></pre> 
   </li>
   <li><strong>NOT NULL:</strong> Ensures that a column cannot have NULL values.
-    <pre><code>
+    <pre><code class ="sql">
       CREATE TABLE products (
         product_id INT PRIMARY KEY,
         product_name VARCHAR(100) NOT NULL
@@ -66,7 +66,7 @@ author_profile: true
     </code></pre> 
   </li>
   <li><strong>DEFAULT:</strong> Provides a default value for a column when none is specified.
-    <pre><code>
+    <pre><code class ="sql">
       CREATE TABLE orders (
         order_id INT PRIMARY KEY,
         order_date DATE DEFAULT CURRENT_DATE
@@ -74,7 +74,7 @@ author_profile: true
     </code></pre> 
   </li>
   <li><strong>CHECK:</strong> Ensures that the value in a column meets a specific condition.
-    <pre><code>
+    <pre><code class ="sql">
       CREATE TABLE employees (
           employee_id INT PRIMARY KEY,
           salary DECIMAL(10, 2),
@@ -83,7 +83,7 @@ author_profile: true
     </code></pre> 
   </li>
   <li><strong>AUTO_INCREMENT (MySQL-specific):</strong> Typically used for primary key columns, automatically generates a unique value for each new record.
-    <pre><code>
+    <pre><code class ="sql" >
       CREATE TABLE employees (
           employee_id INT AUTO_INCREMENT PRIMARY KEY,
           name VARCHAR(100)
