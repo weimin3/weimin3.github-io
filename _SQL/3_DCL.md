@@ -3,7 +3,7 @@ title: "Data Control Language(DCL)"
 collection: SQL
 category: Foundation
 permalink: /SQL/DCL
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+excerpt: 'Those commands deal with the control of access to data in the database,cluding GRANT,REVOKE,DENY'
 date: 2024-09-08
 # venue: 'Journal 1'
 # slidesurl: 'http://academicpages.github.io/files/slides3.pdf'

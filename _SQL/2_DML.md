@@ -3,7 +3,7 @@ title: "Data Manipulation Language(DML)"
 collection: SQL
 category: Foundation
 permalink: /SQL/DML
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+excerpt: 'Those commands are used to manipulate the data within the database,including SELECT,INSERT INTO,UPDATE,DELETE.'
 date: 2024-09-08
 # venue: 'Journal 1'
 # slidesurl: 'http://academicpages.github.io/files/slides2.pdf'

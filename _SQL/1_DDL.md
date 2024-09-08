@@ -3,7 +3,7 @@ title: "Data Definition Language(DDL)"
 collection: SQL
 category: Fundation
 permalink: /SQL/DDL
-excerpt: 'Those commands are used on the structure of database onjects,including CREATE,ALTER and DROP'
+excerpt: 'Those commands are used on the structure of database onjects like tables,indexes and schemas,including CREATE,ALTER,DROP,TRUNCATE'
 date: 2024-09-08
 # venue: 'Journal 1'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
