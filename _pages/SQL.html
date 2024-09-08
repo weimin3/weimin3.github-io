@@ -9,11 +9,74 @@ author_profile: true
 <p>Each column has a name and a data type, there are 7 kinds of data types:</p>
   <ul>
     <li><strong>Interger:</strong> used for numbers without decimal points(like:1,99)</li>
-    <li><strong>Decimal and Float：</strong> used for fractional numbers(for instince:2.0,3.69).The difference between them is,<strong>decimal</strong> is used for precise decimal arithmetic,for example:financial calculations,currency representation.<strong>Float</strong> is used for approximate arithmetic with real numbers. </li>
+    <li><strong>Decimal and Float:</strong> used for fractional numbers(for instince:2.0,3.69).The difference between them is,<strong>decimal</strong> is used for precise decimal arithmetic,for example:financial calculations,currency representation.<strong>Float</strong> is used for approximate arithmetic with real numbers. </li>
     <li><strong>Char and Varchar:</strong> used for characters and strings.<strong>CHAR</strong> for fixed-length strings,and <strong>VARCHAR</strong> is for variable-length strings</li>
     <li><strong>Date and Time:</strong> used for date and time</li>
   </ul>
-  <p>There are three categories SQL commands used for communicate with a database,They are:</p>
+<p><strong>SQL constraints</strong>are rules applied to <strong>columns</strong> in a table to ensure the accuracy and reliability of the data within the database. </p>
+<ul>
+  <li><strong>PRIMARY KEY:</strong>Each table can have only one primary key,the primary key column(s) cannot contain NULL values. it uniquely identifies each record in a table.</li>
+  <li><strong>FOREIGN KEY:</strong> Ensures that the value in one table matches a value in another table,helps maintain referential integrity.
+    <pre><code>
+      ```sql
+      CREATE TABLE departments (
+          department_id INT PRIMARY KEY,
+          department_name VARCHAR(100)
+      );
+
+      CREATE TABLE employees (
+          employee_id INT PRIMARY KEY,
+          name VARCHAR(100),
+          department_id INT,
+          FOREIGN KEY (department_id) REFERENCES departments(department_id)
+      );
+```
+    </code></pre> 
+  </li>
+  <li><strong>UNIQUE:</strong>Ensures that all values in a column are unique.A table can have multiple unique constraints.
+    <pre><code>
+      CREATE TABLE users (
+        user_id INT PRIMARY KEY,
+        email VARCHAR(255) UNIQUE
+      );
+    </code></pre> 
+  </li>
+  <li><strong>NOT NULL:</strong>Ensures that a column cannot have NULL values.
+    <pre><code>
+      CREATE TABLE products (
+        product_id INT PRIMARY KEY,
+        product_name VARCHAR(100) NOT NULL
+      );
+    </code></pre> 
+  </li>
+  <li><strong>DEFAULT:</strong>Provides a default value for a column when none is specified.
+      <pre><code>
+        CREATE TABLE orders (
+          order_id INT PRIMARY KEY,
+          order_date DATE DEFAULT CURRENT_DATE
+      );
+      </code></pre> 
+  </li>
+  <li><strong>CHECK:</strong>Ensures that the value in a column meets a specific condition.
+      <pre><code>
+      CREATE TABLE employees (
+          employee_id INT PRIMARY KEY,
+          salary DECIMAL(10, 2),
+          CHECK (salary > 0)
+      );
+   </code></pre> 
+  </li>
+  <li><strong>AUTO_INCREMENT (MySQL-specific):</strong>Typically used for primary key columns,automatically generates a unique value for each new record.
+      <pre><code>
+        CREATE TABLE employees (
+            employee_id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(100)
+        );
+    </code></pre>
+  </li>
+</ul>
+
+<p>There are three categories SQL commands used for communicate with a database,They</p>
 {% for tutorial in site.SQL %}
   <h2><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></h2>
   <p>{{ tutorial.excerpt }}</p>
@@ -26,6 +89,6 @@ author_profile: true
   <hr class="references-divider" />
   <ul>
     <li><a href="https://medium.com/@learnwithwhiteboard_digest/all-sql-fundamentals-explained-for-beginners-in-10-minutes-e33875bf772a">All SQL Fundamentals Explained for Beginners in 10 Minutes</a></li>
-   
+    <li><a href="https://www.runoob.com/mysql/mysql-tutorial.html">MySQL 教程</a></li>
   </ul>
 </section>
