@@ -185,6 +185,9 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+kramdown:
+  input: GFM
+  toc_levels: 1..6 # 确保目录级别设置正确
 
 
 # Conversion
