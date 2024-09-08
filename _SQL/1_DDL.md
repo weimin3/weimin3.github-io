@@ -101,6 +101,76 @@ For instance: `CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password123';`
 CREATE ROLE role_name
 ```
 For instance: `CREATE ROLE manager`
+------
 
+# ALTER
+The ALTER statement is used to modify **existing objects** in a database, such as tables,columns,constraints, and more.
+## Rename Table
+```sql
+ALTER TABLE old_table_name
+    RENAME TO new_table_name;
+```
+
+## Add a Column
+```sql
+ALTER TABLE table_name
+    ADD COLUMN column_name data_type;
+```
+
+## Drop a Column
+```sql
+ALTER TABLE table_name
+    DROP COLUMN column_name;
+```
+
+## Modify data type of a Column
+```sql
+ALTER TABLE table_name
+    MODIFY COLUMN column_name new_data_type;
+```
+
+## Rename column
+```sql
+ALTER TABLE table_name
+    RENAME COLUMN column_name TO new_column_name;
+```
+
+## Add Constraint
+```sql
+ALTER TABLE table_name
+    ADD CONSTRAINT constraint_name constraint_type (column_name);
+```
+```sql
+ALTER TABLE employees
+    ADD CONSTRAINT fk_department
+    FOREIGN KEY (department_id) REFERENCES departments(department_id);
+```
+Adds a foreign key constraint named fk_department on the department_id column referencing departments(department_id).
+
+## Drop Constraint
+```sql
+ALTER TABLE table_name
+    DROP CONSTRAINT constraint_name;
+```
+```sql
+ALTER TABLE employees
+    DROP CONSTRAINT fk_department;
+```
+Removes the foreign key constraint fk_department from the employees table.
+
+## Change Default Value
+```sql
+ALTER TABLE table_name
+    ALTER COLUMN column_name SET DEFAULT default_value;
+```
+```sql
+ALTER TABLE employees
+    ALTER COLUMN hire_date SET DEFAULT CURRENT_DATE;
+```
+Sets the default value of the hire_date column to the current date.
+----
+# DROP
+
+# TRUNCATE
 
 
