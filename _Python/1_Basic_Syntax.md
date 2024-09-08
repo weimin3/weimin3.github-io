@@ -3,6 +3,7 @@ title: "1. Basic Syntax"
 collection: Python
 permalink: /Python/basic-syntax/
 date: 2024-09-08
+author_profile: true
 ---
 
 hello!
