@@ -76,7 +76,7 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 SQL_category:
   sql:
-    title: 'Fundation'
+    title: 'Foundation'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
