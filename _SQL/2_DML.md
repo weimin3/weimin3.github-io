@@ -209,27 +209,26 @@ LIMIT number_of_rows;
 
 **Exmples**
 
-    * Return the first 3 rows from the employees table
+** Return the first 3 rows from the employees table
 
-    ```sql
-    SELECT employee_id, name
-    FROM employees
-    LIMIT 3;
+```sql
+SELECT employee_id, name
+FROM employees
+LIMIT 3;
+```
+In SQL Server, the equivalent of `LIMIT` is `TOP`
+
+```sql
+SELECT TOP 3 employee_id, name
+FRM employees;
     ```
-    In SQL Server, the equivalent of `LIMIT` is `TOP`
 
-    ```sql
-    SELECT TOP 3 employee_id, name
-    FROM employees;
-    ```
-
-    * Skip the first 5 rows and return the next 3 rows (rows 6, 7, and 8).
-
-    ```sql
-    SELECT employee_id, name
-    FROM employees
-    LIMIT 3 OFFSET 5;
-    ````
+** Skip the first 5 rows and return the next 3 rows (rows 6, 7, and 8).
+```sql
+SELECT employee_id, name
+FROM employees
+LIMIT 3 OFFSET 5;
+````
 
 # INSERT INTO
 Adding new rows of data to a table.
