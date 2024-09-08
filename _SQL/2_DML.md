@@ -72,114 +72,102 @@ HAVING AVG(salary) > 50000;
 | 2             | IT              |
 | 3             | Marketing       |
 
+**INNER JOIN:** Returns **only the matching records** from both tables.
 
-    * **INNER JOIN:** Returns **only the matching records** from both tables.
-
-    **Syntax**
-
-    ```sql
+**Syntax**
+```sql
     SELECT columns
     FROM table1
     INNER JOIN table2
     ON table1.column = table2.column;
-    ```
-    **Example**
+```
+**Example**
 
-    Only the employees with matching department_id in the departments table will be shown.
-
-    ```sql
+Only the employees with matching department_id in the departments table will be shown.
+```sql
     SELECT employees.employee_name, departments.department_name
     FROM employees
     INNER JOIN departments
     ON employees.department_id = departments.department_id;
-    ```
+```
 
-    * **LEFT JOIN:** Returns **all records from the left table** and **the matching records from the right table**. If no match is found, NULL is returned.
+**LEFT JOIN:** Returns **all records from the left table** and **the matching records from the right table**. If no match is found, NULL is returned.
 
-    **Syntax**
-
-    ```sql
+**Syntax**
+```sql
     SELECT columns
     FROM table1
     LEFT JOIN table2
     ON table1.column = table2.column;
-    ```
-    **Example**
+```
+**Example**
 
-    All employees will be returned, and unmatched departments will show NULL
-
-    ```sql
+All employees will be returned, and unmatched departments will show NULL
+```sql
     SELECT employees.employee_name, departments.department_name
     FROM employees
     LEFT JOIN departments
     ON employees.department_id = departments.department_id;
-    ```
+```
 
-    * **RIGHT JOIN:** Returns **all records from the right table** and **the matching records from the left table**. If no match is found, NULL is returned.
+**RIGHT JOIN:** Returns **all records from the right table** and **the matching records from the left table**. If no match is found, NULL is returned.
 
-    **Syntax**
-
-    ```sql
+**Syntax**
+```sql
     SELECT columns
     FROM table1
     RIGHT JOIN table2
     ON table1.column = table2.column;
-    ```
-    **Example**
+```
+**Example**
 
-    All departments will be shown, and unmatched employees will show NULL
-
-    ```sql
+All departments will be shown, and unmatched employees will show NULL
+```sql
     SELECT employees.employee_name, departments.department_name
     FROM employees
     RIGHT JOIN departments
     ON employees.department_id = departments.department_id;
-    ```
+```
 
-    * **FULL OUTER JOIN：** Returns **all records from both tables**, with NULL used to fill in unmatched records.
+**FULL OUTER JOIN：** Returns **all records from both tables**, with NULL used to fill in unmatched records.
 
-    **Syntax**
-
-    ```sql
+**Syntax**
+```sql
     SELECT columns
     FROM table1
     FULL OUTER JOIN table2
     ON table1.column = table2.column;
-    ```
-    **Example**
+```
+**Example**
  
-    Returns all records from both employees and departments, with NULL for unmatched records.
-
-    ```sql
+Returns all records from both employees and departments, with NULL for unmatched records.
+```sql
     SELECT employees.employee_name, departments.department_name
     FROM employees
     FULL OUTER JOIN departments
     ON employees.department_id = departments.department_id;
-    ```
+```
 
-    * **CROSS JOIN:** Returns the Cartesian product of the two tables, i.e., all possible row combinations.
+**CROSS JOIN:** Returns the Cartesian product of the two tables, i.e., all possible row combinations.
 
-    **Syntax**
-
-    ```sql
+**Syntax**
+```sql
     SELECT columns
     FROM table1
     CROSS JOIN table2;
-    ```
-    **Example**
+```
+**Example**
 
-    Returns every possible combination of rows from employees and departments
-
-    ```sql
+Returns every possible combination of rows from employees and departments
+```sql
     SELECT employees.employee_name, departments.department_name
     FROM employees
     CROSS JOIN departments;
-    ```
+```
 
-** **SELF JOIN:** Joins a table to itself, **used to compare rows within the same table**.
+**SELF JOIN:** Joins a table to itself, **used to compare rows within the same table**.
 
- **Syntax**
-
+**Syntax**
 ```sql
 SELECT a.column1, b.column2
 FROM table a, table b
@@ -188,7 +176,6 @@ WHERE a.column = b.column;
 **Example**
 
 Compares employees within the same department.
-
 ```sql
 SELECT e1.employee_name AS employee1, e2.employee_name AS employee2
 FROM employees e1
@@ -210,14 +197,12 @@ LIMIT number_of_rows;
 **Exmples**
 
 - Return the first 3 rows from the employees table
-
 ```sql
 SELECT employee_id, name
 FROM employees
 LIMIT 3;
 ```
 In SQL Server, the equivalent of `LIMIT` is `TOP`
-
 ```sql
 SELECT TOP 3 employee_id, name
 FRM employees;
