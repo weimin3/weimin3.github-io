@@ -5,7 +5,31 @@ permalink: /SQL/DDL
 excerpt: 'Those commands are used on the structure of database onjects like tables,indexes and schemas,including CREATE,ALTER,DROP,TRUNCATE.'
 date: 2024-09-08
 ---
-[TOC]
+- [CREATE](#create)
+  - [Create a database](#create-a-database)
+  - [Create a table:](#create-a-table)
+  - [Create a sequence](#create-a-sequence)
+  - [Create unique index](#create-unique-index)
+  - [Create a view](#create-a-view)
+  - [Create index](#create-index)
+  - [Create a user](#create-a-user)
+  - [Create a role](#create-a-role)
+- [ALTER](#alter)
+  - [Rename Table](#rename-table)
+  - [Add a Column](#add-a-column)
+  - [Drop a Column](#drop-a-column)
+  - [Modify data type of a Column](#modify-data-type-of-a-column)
+  - [Rename column](#rename-column)
+  - [Add Constraint](#add-constraint)
+  - [Drop Constraint](#drop-constraint)
+  - [Change Default Value](#change-default-value)
+- [DROP](#drop)
+  - [Drop database](#drop-database)
+  - [Drop table](#drop-table)
+  - [Drop view](#drop-view)
+  - [Drop index](#drop-index)
+  - [DROP SEQUENCE](#drop-sequence)
+- [TRUNCATE](#truncate)
 
 # CREATE
 ## Create a database
