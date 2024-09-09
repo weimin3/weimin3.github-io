@@ -256,6 +256,7 @@ variable_name = input("Prompt message")
 The `input()` function is used to read a line of text from the user via the keyboard. The text provided in the function's argument is displayed as a prompt to the user.The data received from the `input()` function is always of type `str `(string), even if the user inputs numbers or other data types.
 
 **Exercise**
+
 Define two variables to capture input from the keyboard, with the following prompts:
 ```python
 user_name = input("Please enter your name: ")
