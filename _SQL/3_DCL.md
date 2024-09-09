@@ -5,6 +5,10 @@ permalink: /SQL/DCL
 excerpt: 'Those commands deal with the control of access to data in the database,cluding GRANT,REVOKE,DENY'
 date: 2024-09-08
 ---
+- [GRANT](#grant)
+- [REVOKE](#revoke)
+- [DENY](#deny)
+
 Data Control Language (DCL) is used to control access to data within a database.These commands manage permissions for users and roles, specifying who can access or manipulate the data.
 # GRANT
 The command is used to give users or roles specific privileges on database objects (such as tables, views, or procedures).
