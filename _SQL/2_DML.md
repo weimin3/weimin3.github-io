@@ -5,6 +5,20 @@ permalink: /SQL/DML
 excerpt: 'Those commands are used to manipulate the data within the database,including SELECT,INSERT INTO,UPDATE,DELETE.DQL(Data Query Language)is in this part.'
 date: 2024-09-08
 ---
+- [SELECT](#select)
+  - [DQL](#dql)
+    - [Retrieve all columns from the employees table](#retrieve-all-columns-from-the-employees-table)
+    - [Retrieve specific columns](#retrieve-specific-columns)
+    - [Filter data using `WHERE`](#filter-data-using-where)
+    - [Sorting data using `ORDER BY`](#sorting-data-using-order-by)
+    - [Grouping data using `GROUP BY`](#grouping-data-using-group-by)
+    - [Filtering grouped data using `HAVING`](#filtering-grouped-data-using-having)
+    - [Joining two tables](#joining-two-tables)
+- [INSERT INTO](#insert-into)
+- [UPDATE](#update)
+- [DELETE](#delete)
+
+
 # SELECT
 Retrieving data from one or more tables.
 
@@ -15,36 +29,37 @@ SELECT column1, column2, ...
     WHERE condition;
 ```
 ## DQL
-* **Retrieve all columns from the employees table**
+### Retrieve all columns from the employees table
 ```sql
 SELECT * FROM employees;
 ```
 
-* **Retrieve specific columns**
+### Retrieve specific columns
 ```sql
 SELECT name,salary FROM employees;
 ```
 
-* **Filter data using `WHERE`**
+### Filter data using `WHERE`
 ```sql
 SELECT name,department FROM employees
 WHERE salary > 50000;
 ```
 
-* **Sorting data using `ORDER BY`.** `DESC`(descending order),`ASC`(ascending order)
+### Sorting data using `ORDER BY`
 ```sql
 SELECT name, salary FROM employees
 ORDER BY salary DESC;
 ```
+`DESC`(descending order),`ASC`(ascending order)
 
-* **Grouping data using `GROUP BY`**
+### Grouping data using `GROUP BY`
 ```sql
 SELECT department, COUNT(*) AS total_employees
 FROM employees
 GROUP BY department;
 ```
 
-* **Filtering grouped data using `HAVING`**
+### Filtering grouped data using `HAVING`
 ```sql
 SELECT department, AVG(salary) AS average_salary
 FROM employees
@@ -52,7 +67,7 @@ GROUP BY department
 HAVING AVG(salary) > 50000;
 ```
 
-* **Joining two tables**
+### Joining two tables
 
 **employee** table
 
