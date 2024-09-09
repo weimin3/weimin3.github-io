@@ -7,7 +7,7 @@ date: 2024-09-08
 ---
 - [CREATE](#create)
   - [Create a database](#create-a-database)
-  - [Create a table:](#create-a-table)
+  - [Create a table](#create-a-table)
   - [Create a sequence](#create-a-sequence)
   - [Create unique index](#create-unique-index)
   - [Create a view](#create-a-view)
@@ -15,20 +15,20 @@ date: 2024-09-08
   - [Create a user](#create-a-user)
   - [Create a role](#create-a-role)
 - [ALTER](#alter)
-  - [Rename Table](#rename-table)
-  - [Add a Column](#add-a-column)
-  - [Drop a Column](#drop-a-column)
-  - [Modify data type of a Column](#modify-data-type-of-a-column)
+  - [Rename table](#rename-table)
+  - [Add a column](#add-a-column)
+  - [Drop a column](#drop-a-column)
+  - [Modify data type of a column](#modify-data-type-of-a-column)
   - [Rename column](#rename-column)
-  - [Add Constraint](#add-constraint)
-  - [Drop Constraint](#drop-constraint)
-  - [Change Default Value](#change-default-value)
+  - [Add constraint](#add-constraint)
+  - [Drop constraint](#drop-constraint)
+  - [Change default value](#change-default-value)
 - [DROP](#drop)
   - [Drop database](#drop-database)
   - [Drop table](#drop-table)
   - [Drop view](#drop-view)
   - [Drop index](#drop-index)
-  - [DROP SEQUENCE](#drop-sequence)
+  - [Drop sequence](#drop-sequence)
 - [TRUNCATE](#truncate)
 
 # CREATE
@@ -40,7 +40,7 @@ CREATE DATABASE [IF NOT EXISTS] databasename;
 
 For instance: `CREATE DATABASE IF NOT EXISTS company_db;`
 
-## Create a table:
+## Create a table
 ```sql
 CREATE TABLE table_name(
     column 1 datatype,
@@ -130,25 +130,25 @@ For instance: `CREATE ROLE manager`
 
 # ALTER
 The ALTER statement is used to modify **existing objects** in a database, such as tables,columns,constraints, and more.
-## Rename Table
+## Rename table
 ```sql
 ALTER TABLE old_table_name
     RENAME TO new_table_name;
 ```
 
-## Add a Column
+## Add a column
 ```sql
 ALTER TABLE table_name
     ADD COLUMN column_name data_type;
 ```
 
-## Drop a Column
+## Drop a column
 ```sql
 ALTER TABLE table_name
     DROP COLUMN column_name;
 ```
 
-## Modify data type of a Column
+## Modify data type of a column
 ```sql
 ALTER TABLE table_name
     MODIFY COLUMN column_name new_data_type;
@@ -160,7 +160,7 @@ ALTER TABLE table_name
     RENAME COLUMN column_name TO new_column_name;
 ```
 
-## Add Constraint
+## Add constraint
 ```sql
 ALTER TABLE table_name
     ADD CONSTRAINT constraint_name constraint_type (column_name);
@@ -172,7 +172,7 @@ ALTER TABLE employees
 ```
 Adds a foreign key constraint named fk_department on the department_id column referencing departments(department_id).
 
-## Drop Constraint
+## Drop constraint
 ```sql
 ALTER TABLE table_name
     DROP CONSTRAINT constraint_name;
@@ -183,7 +183,7 @@ ALTER TABLE employees
 ```
 Removes the foreign key constraint fk_department from the employees table.
 
-## Change Default Value
+## Change default value
 ```sql
 ALTER TABLE table_name
     ALTER COLUMN column_name SET DEFAULT default_value;
@@ -212,7 +212,7 @@ DROP VIEW [IF EXISTS] view_name;
 ```sql
 DROP INDEX [IF EXISTS] index_name ON table_name;
 ```
-## DROP SEQUENCE
+## Drop sequence
 ```sql
 DROP SEQUENCE [IF EXISTS] sequence_name;
 ```
