@@ -37,7 +37,7 @@ name = "Alice"
 # Boolean literal
 is_active = True
 ```
-In the code above, 10, "Alice", and "True" are all literals.
+In the code above, 10, "Alice", and True are all literals.
 
 # Comments
 
@@ -45,7 +45,7 @@ Comments are used to explain the code. They help make the code more readable and
 
 ## Single-line Comments
 
-Single-line comments start with a # symbol.
+Single-line comments start with a `#` symbol.
 ```python
 # This is a single-line comment
 x = 10  # This is another comment explaining x
