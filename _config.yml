@@ -218,7 +218,7 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  Data_Science:
     output: true
     permalink: /:collection/:path/
   
@@ -262,10 +262,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _Data_Science
   - scope:
       path: ""
-      type: portfolio
+      type: Data_Science
     values:
       layout: single
       author_profile: true

@@ -17,12 +17,12 @@ main:
   - title: "JAVA"
     url: /JAVA/
 
-  - title: "Statistics"
-    url: /Statistics/
+  - title: "Data Science"
+    url: /Data_Science/
   
-  - title: "Machine Learning"
-    url: /Machine Learning/
+  # - title: "Machine Learning"
+  #   url: /Machine Learning/
   
-  - title: "Blog Posts"
-    url: /year-archive/
+  # - title: "Blog Posts"
+  #   url: /year-archive/
 
