@@ -210,8 +210,8 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   SQL:
-      output: true
-      permalink: /:collection/:path/
+    output: true
+    permalink: /:collection/:path/
   Python:
     output: true
     permalink: /:collection/:path/
