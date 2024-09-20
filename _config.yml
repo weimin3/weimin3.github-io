@@ -215,7 +215,7 @@ collections:
   Python:
     output: true
     permalink: /:collection/:path/
-  Data Science:
+  Data_Science:
     output: true
     permalink: /:collection/:path/
   teaching:
