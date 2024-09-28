@@ -97,8 +97,8 @@ For regression, the prediction is the average of the nearest neighbors.
 - Manhattan Distance: Sum of the absolute differences of their coordinates.
 - Minkowski Distance: A generalization of Euclidean and Manhattan distances.
 3. Find Neighbors: Identify the K closest data points in the training set to the query point.
-4.1. Majority Vote(For Classification): The class label of the query point is determined by the majority class among its K nearest neighbors. For instance, if 3 out of 5 neighbors are labeled "positive" and 2 are labeled "negative," the query point is classified as "positive." 
-4.2. Average or Weighted Average(For Regression): The prediction for the query point is typically the average of the values of its K nearest neighbors. In some cases, a weighted average might be used, where closer neighbors have more influence.
+4. Majority Vote(For Classification): The class label of the query point is determined by the majority class among its K nearest neighbors. For instance, if 3 out of 5 neighbors are labeled "positive" and 2 are labeled "negative," the query point is classified as "positive." 
+4. Average or Weighted Average(For Regression): The prediction for the query point is typically the average of the values of its K nearest neighbors. In some cases, a weighted average might be used, where closer neighbors have more influence.
 
 **Advantages and Disadvantages of KNN**
 **Advantages:**
