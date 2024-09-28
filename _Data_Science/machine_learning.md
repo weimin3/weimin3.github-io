@@ -12,8 +12,6 @@ permalink: /Data_Science/machine_learning/
     - [Random Forest](#random-forest)
     - [Support Vector Machines(SVM)](#support-vector-machinessvm)
     - [K-Nearest Neighbors(KNN)](#k-nearest-neighborsknn)
-      - [How it works?](#how-it-works)
-      - [Advantages and Disadvantages of KNN](#advantages-and-disadvantages-of-knn)
   - [Applications](#applications)
 - [Unsupervised Learning](#unsupervised-learning)
   - [Key Characteristics](#key-characteristics-1)
@@ -89,22 +87,20 @@ For regression, the prediction is the average of the nearest neighbors.
 
 **Use Case:** Predicting the rating of a movie (regression) or classifying a plant species based on its features (classification).
 
-#### How it works?
+**How it works?**
 1. Determine K: Choose the number of neighbors (K). The optimal K is typically found through cross-validation
 - Small K: A small value of K (e.g., 1 or 3) makes the model **sensitive to noise** in the data, as it only considers the closest neighbors, which could be outliers.
 - Large K: A large value of K makes the decision boundary smoother but can lead to a model that is too simple, potentially **underfitting the data**.
-2. Calculate Distance: For a new data point (query point), calculate the distance between this point and all points in the training dataset. Common distance metrics include:
+  
+1. Calculate Distance: For a new data point (query point), calculate the distance between this point and all points in the training dataset. Common distance metrics include:
 - Euclidean Distance: Most commonly used. Given two points 
- 
 - Manhattan Distance: Sum of the absolute differences of their coordinates.
 - Minkowski Distance: A generalization of Euclidean and Manhattan distances.
 3. Find Neighbors: Identify the K closest data points in the training set to the query point.
-4. 
-- Majority Vote(For Classification): The class label of the query point is determined by the majority class among its K nearest neighbors. For instance, if 3 out of 5 neighbors are labeled "positive" and 2 are labeled "negative," the query point is classified as "positive." 
-   
-- Average or Weighted Average(For Regression): The prediction for the query point is typically the average of the values of its K nearest neighbors. In some cases, a weighted average might be used, where closer neighbors have more influence.
+4.1. Majority Vote(For Classification): The class label of the query point is determined by the majority class among its K nearest neighbors. For instance, if 3 out of 5 neighbors are labeled "positive" and 2 are labeled "negative," the query point is classified as "positive." 
+4.2. Average or Weighted Average(For Regression): The prediction for the query point is typically the average of the values of its K nearest neighbors. In some cases, a weighted average might be used, where closer neighbors have more influence.
 
-#### Advantages and Disadvantages of KNN
+**Advantages and Disadvantages of KNN**
 **Advantages:**
 - Simplicity: KNN is easy to understand and implement.
 - No Training Phase: KNN is a lazy learner, meaning it doesn’t require a separate training phase, making it fast to set up.
