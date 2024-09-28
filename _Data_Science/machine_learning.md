@@ -104,6 +104,7 @@ $$
 3. Average or Weighted Average(For Regression): The prediction for the query point is typically the average of the values of its K nearest neighbors. In some cases, a weighted average might be used, where closer neighbors have more influence.
 
 **Advantages and Disadvantages of KNN**
+
 **Advantages:**
 - Simplicity: KNN is easy to understand and implement.
 - No Training Phase: KNN is a lazy learner, meaning it doesn’t require a separate training phase, making it fast to set up.
