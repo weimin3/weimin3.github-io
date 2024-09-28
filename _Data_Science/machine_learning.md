@@ -3,6 +3,32 @@
 collection: Data_Science
 permalink: /Data_Science/machine_learning/
 ---
+- [Supervised Learning](#supervised-learning)
+  - [Key Characteristics](#key-characteristics)
+  - [Common algorithms](#common-algorithms)
+    - [Linear Regression](#linear-regression)
+    - [Logistic Regression](#logistic-regression)
+    - [Decision Trees](#decision-trees)
+    - [Random Forest](#random-forest)
+    - [Support Vector Machines(SVM)](#support-vector-machinessvm)
+    - [K-Nearest Neighbors(KNN)](#k-nearest-neighborsknn)
+  - [Applications](#applications)
+- [Unsupervised Learning](#unsupervised-learning)
+  - [Key Characteristics](#key-characteristics-1)
+  - [Common algorithms](#common-algorithms-1)
+    - [K-Means Clustering](#k-means-clustering)
+    - [Hierarchical Clustering](#hierarchical-clustering)
+    - [Principal Component Analysis(PCA)](#principal-component-analysispca)
+    - [Autoencoders](#autoencoders)
+  - [Application](#application)
+- [Reinforcement Learning](#reinforcement-learning)
+  - [Key Characteristics](#key-characteristics-2)
+  - [Common algorithms](#common-algorithms-2)
+    - [Q-Learning](#q-learning)
+    - [Deep Q-Networks(DQN)](#deep-q-networksdqn)
+    - [Policy Gradient Methods](#policy-gradient-methods)
+  - [Application](#application-1)
+
 Machine Learning(ML) is a branch of Artificial Intelligence(AI) that allows computers to learn from data without being explicitly programmed. Instead of following hardcoded instructions,ML use patterns and inference to make predictions or decisions,improving their performance over time.
 
 Machine learning is categorized into three main types:supervised learning,unsupervised learning and reinforcement learning.
