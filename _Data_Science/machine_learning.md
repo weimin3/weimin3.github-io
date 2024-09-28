@@ -93,7 +93,7 @@ For regression, the prediction is the average of the nearest neighbors.
 - Large K: A large value of K makes the decision boundary smoother but can lead to a model that is too simple, potentially **underfitting the data**.
   
 1. Calculate Distance: For a new data point (query point), calculate the distance between this point and all points in the training dataset. Common distance metrics include:
-- Euclidean Distance: Most commonly used. Given two points $P = (x_1, y_1)$ and $Q = (x_2, y_2)$ is：
+- Euclidean Distance: Most commonly used. Given two points $ P = (x_1, y_1) $ and $Q = (x_2, y_2)$ is：
 $$
 d(P, Q) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
 $$
