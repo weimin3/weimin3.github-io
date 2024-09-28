@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning"
+# title: "Machine Learning"
 collection: Data_Science
 permalink: /Data_Science/machine_learning/
 ---
@@ -25,8 +25,11 @@ In supervised learning, the algorithm is trained on a labeled dataset, which mea
 
 ### Support Vector Machines(SVM)
 
-### K-Nearest Neighbors(KNN)
 
+### K-Nearest Neighbors(KNN)
+KNN classifies a data point based on the majority label of its nearest neighbors in the feature space. For regression, the prediction is the average of the nearest neighbors.
+
+**Task:** Both Classification and Regression
 
   
 ## Applications
