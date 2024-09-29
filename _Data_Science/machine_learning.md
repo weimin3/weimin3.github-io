@@ -87,7 +87,7 @@ For regression, the prediction is the average of the nearest neighbors.
 
 **Use Case:** Predicting the rating of a movie (regression) or classifying a plant species based on its features (classification).
 
-**[How it works?](KNN.md)**
+**[How it works?](../Data_Science/KNN.md)**
 
 **Advantages and Disadvantages of KNN**
 
