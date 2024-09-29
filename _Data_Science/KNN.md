@@ -1,3 +1,10 @@
+---
+title: "K-Nearest Neighbors"
+collection: Data_Science
+permalink: /Data_Science/KNN/
+---
+
+
 # How it works?
 
 1. Determine K: Choose the number of neighbors (K). The optimal K is typically found through cross-validation
