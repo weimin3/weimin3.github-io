@@ -21,7 +21,39 @@ $$
 4. Majority Vote(For Classification): The class label of the query point is determined by the majority class among its K nearest neighbors. For instance, if 3 out of 5 neighbors are labeled "positive" and 2 are labeled "negative," the query point is classified as "positive." 
 5. Average or Weighted Average(For Regression): The prediction for the query point is typically the average of the values of its K nearest neighbors. In some cases, a weighted average might be used, where closer neighbors have more influence.
 
-****
+# Development of KNN from scratch in Python
+```python
+from collections import Counter
+from math import sqrt
+# Step 1: Calculate  Euclidean Distance
+def euclidean_distance(point1,point2):
+    distance = 0
+    for i in range(len(point1)-1):
+        distance += (point1[i] - point2[i])**2
+    return sqrt(distance)
+
+# Step 2: Get K Nearest Neighbors
+def get_neighbors(training_data,test_point,num_neighbors):
+    distances = []
+
+    for train_point in training_data:
+        distance = euclidean_distance(test_point,train_point)
+        distances.append((train_point,distance))
+
+    distances.sort(key = lambda dis : dis[1])
+    neighbors = [distances[k][0] for k in range(num_neighbors)]
+    return neighbors
+    
+# Step 3: Make Prediction
+def predict_classification(training_data,test_point,num_neighbors):
+    neighbors = get_neighbors(training_data,test_point,num_neighbors)
+    output_values = [neighbor[-1] for neighbor in neighbors]
+    prediction = Counter(output_values).most_common(1)[0][0]
+    return prediction
+```
+#
+
+# Case Study: the Iris flower dataset
 
 
 [Back to Introduction to Machine Learning](machine_learning.md)
