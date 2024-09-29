@@ -25,7 +25,8 @@ Time series clustering involves two main types:subsequence clustering and time p
 
 ## Similarity Measures
 1. Dynamic time warping(DTW):aligns two time series that may vary in speed or length.It warps the time axis to minimize the distance between corresponding points in two seires. it is commonly used for speech recognition and financial time series analysis.  
-```python
+   
+```Python
 from scipy.spatial.distance import euclidean
 from fastdtw import fastdtw
 
@@ -60,6 +61,7 @@ Output:
 Euclidean Distance: 1.0
 ```
 3. Correlation-based Metrics:Correlation measures the similarity in the shape or trend between two time series, regardless of the magnitude. A common example is the Pearson correlation.It is useful when we care more about the trend or pattern in the data (e.g., stock market analysis).
+   
 ```python
 import numpy as np
 from scipy.stats import pearsonr
@@ -71,7 +73,7 @@ y = np.array([2, 4, 6, 8, 10])
 correlation, _ = pearsonr(x, y)
 print("Pearson Correlation: ", correlation)
 ```
-Output
+Output:
 ```python
 Pearson Correlation: 1.0
 ```
