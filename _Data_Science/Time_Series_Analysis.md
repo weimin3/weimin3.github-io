@@ -84,8 +84,21 @@ Pearson Correlation: 1.0
 
 ## Clustering methods
 1. K-Means:partitions time series into k clusters based on distance metrics.The distance between time series is typically measured using Euclidean distance or DTW.
-   
+
+```python
+from sklearn.cluster import KMeans
+# Fit K-Means
+kmeans = Kmeans().fit
+# Get the cluster labels
+labels = kmeans.labels_
+```
 
 2. K-Shape: A variant that uses shape-based distance to improve clustering for time series.It uses shape-based distance (a form of normalized cross-correlation) to help capture the shape of time series rather than their values.
    
+   
 3. Hierarchical Clustering:Builds a tree-like structure to visualize and analyze the clustering process.
+
+```python
+from scipy.cluster.hierarchy import linkage
+z = linkage()
+```
