@@ -26,18 +26,18 @@ Time series clustering involves two main types:subsequence clustering and time p
 ## Similarity Measures
 1. Dynamic time warping(DTW):aligns two time series that may vary in speed or length.It warps the time axis to minimize the distance between corresponding points in two seires. it is commonly used for speech recognition and financial time series analysis.  
    
-```Python
+```python
 from scipy.spatial.distance import euclidean
 from fastdtw import fastdtw
 
 x = [1, 2, 3, 4, 5]
 y = [1, 2, 2, 4, 4, 5]
 
-# DTW using fastdtw
 distance, path = fastdtw(x, y, dist=euclidean)
 print("DTW Distance: ", distance)
 print("Path: ", path)
 ```
+
 Output:
 ```python
 DTW Distance: 1.0
@@ -46,6 +46,7 @@ Path: [(0, 0), (1, 1), (2, 2), (3, 3), (4, 4), (4, 5)]
 It means the total distance after alignment is 1.0, and the optimal alignment (warping) occurs according to the shown pairs of indices.
 
 2. Euclidean Distance:calculating the straight-line distance between corresponding points in two equally sized time series.It works best when both series have the same length and no time-shift differences, such as sensor data in controlled environments.
+   
 ```python
 import numpy as np
 
@@ -56,7 +57,9 @@ y = np.array([1, 2, 2, 4, 5])
 distance = np.linalg.norm(x - y)
 print("Euclidean Distance: ", distance)
 ```
+
 Output:
+
 ```python
 Euclidean Distance: 1.0
 ```
@@ -74,9 +77,11 @@ correlation, _ = pearsonr(x, y)
 print("Pearson Correlation: ", correlation)
 ```
 Output:
+
 ```python
 Pearson Correlation: 1.0
 ```
+
 ## Clustering methods
 1. K-Means:partitions time series into k clusters based on distance metrics.The distance between time series is typically measured using Euclidean distance or DTW.
    
