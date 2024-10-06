@@ -1,7 +1,7 @@
 ---
 title: "K-Nearest Neighbors"
 collection: Data_Science
-permalink: /machine_learning/KNN/
+permalink: /Data_Science/machine_learning/KNN/
 ---
 
 
